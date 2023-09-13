@@ -54,7 +54,7 @@ export default function MainScene() {
         <Ground>
           <ChurchCol />
         </Ground>
-        {/* {<Player pos={{ x: 0, y: 1, z: 0 }} rot={{ x: 0, y: 0, z: 0 }} />} */}
+        <Player pos={{ x: 0, y: 1, z: 0 }} rot={{ x: 0, y: 0, z: 0 }} />
       </Physics>
     </>
   );
