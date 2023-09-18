@@ -24,8 +24,7 @@ export default function Home() {
           { name: "sit", keys: ["v"] },
         ]}
       >
-        <Canvas shadows>
-          <OrbitControls makeDefault />
+        <Canvas shadows camera={{ fov: 40 }}>
           <Suspense fallback={null}>
             <MainScene />
           </Suspense>
