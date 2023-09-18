@@ -46,7 +46,7 @@ export default function MainScene() {
           castShadow
         />
       </group>
-      <Physics gravity={[0, -10, 0]}>
+      <Physics gravity={[0, -0.5, 0]}>
         <Church />
         <ToonObject src="/models/obj_Lion.gltf" />
         <ToonObject src="/models/obj_angel.gltf" />
@@ -54,7 +54,7 @@ export default function MainScene() {
         <Ground>
           <ChurchCol />
         </Ground>
-        {/* {<Player pos={{ x: 0, y: 1, z: 0 }} rot={{ x: 0, y: 0, z: 0 }} />} */}
+        <Player pos={{ x: 0, y: 1, z: 0 }} rot={{ x: 0, y: 0, z: 0 }} />
       </Physics>
     </>
   );
